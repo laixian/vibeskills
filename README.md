@@ -10,6 +10,10 @@
 |-------|------|
 | [product-insights](product-insights/) | 对项目进行产品层面的深度洞察，找出产品愿景与当前形态之间的错位，输出可行动的建议 |
 
+### product-insights
+
+![product-insights concept](product-insights/concept.svg)
+
 ## 使用方式
 
 ### 方式一：全局安装

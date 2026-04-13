@@ -1,0 +1,157 @@
+<svg width="960" height="420" viewBox="0 0 960 420" xmlns="http://www.w3.org/2000/svg" font-family="'PingFang SC','Hiragino Sans GB','Microsoft YaHei',system-ui,sans-serif">
+  <!-- Background -->
+  <rect width="960" height="420" fill="#0d1117" rx="12"/>
+
+  <!-- Subtle grid lines -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff08" stroke-width="0.5"/>
+    </pattern>
+    <!-- Glow filter for vision beam -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Arrow marker -->
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#3b82f6"/>
+    </marker>
+    <marker id="arrow-dim" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#4b5563"/>
+    </marker>
+    <!-- Radial gradient for vision highlight -->
+    <radialGradient id="visionGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Linear gradient for insight card -->
+    <linearGradient id="insightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f2340"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="960" height="420" fill="url(#grid)" rx="12"/>
+
+  <!-- Title area -->
+  <text x="480" y="46" text-anchor="middle" fill="#f8fafc" font-size="20" font-weight="700" letter-spacing="1">product-insights</text>
+  <text x="480" y="70" text-anchor="middle" fill="#64748b" font-size="12.5">先理解产品的灵魂，再用创始人的愿景照出错位，输出可行动的洞察</text>
+
+  <!-- Separator line -->
+  <line x1="80" y1="88" x2="880" y2="88" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- ========== STEP 1: 产品灵魂 ========== -->
+  <rect x="48" y="108" width="168" height="220" rx="10" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
+  <!-- Step badge -->
+  <rect x="60" y="120" width="42" height="18" rx="9" fill="#1e3a5f"/>
+  <text x="81" y="133" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">STEP 1</text>
+
+  <text x="132" y="155" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="600">读懂产品灵魂</text>
+  <line x1="72" y1="165" x2="192" y2="165" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- 4 signals -->
+  <rect x="64" y="175" width="136" height="24" rx="5" fill="#1c2433"/>
+  <text x="84" y="191" fill="#94a3b8" font-size="10">⚡</text>
+  <text x="96" y="191" fill="#94a3b8" font-size="10.5">状态与生命周期</text>
+
+  <rect x="64" y="205" width="136" height="24" rx="5" fill="#1c2433"/>
+  <text x="84" y="221" fill="#94a3b8" font-size="10">🗺</text>
+  <text x="96" y="221" fill="#94a3b8" font-size="10.5">用户入口与旅程</text>
+
+  <rect x="64" y="235" width="136" height="24" rx="5" fill="#1c2433"/>
+  <text x="84" y="251" fill="#94a3b8" font-size="10">⚙</text>
+  <text x="96" y="251" fill="#94a3b8" font-size="10.5">自动化与编排</text>
+
+  <rect x="64" y="265" width="136" height="24" rx="5" fill="#1c2433"/>
+  <text x="84" y="281" fill="#94a3b8" font-size="10">🔗</text>
+  <text x="96" y="281" fill="#94a3b8" font-size="10.5">集成与数据流向</text>
+
+  <text x="132" y="315" text-anchor="middle" fill="#475569" font-size="10">4 类信号 → 核心工作流</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="218" y1="218" x2="260" y2="218" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ========== STEP 2: 创始人愿景 (center, highlighted) ========== -->
+  <!-- Glow background -->
+  <ellipse cx="340" cy="218" rx="90" ry="75" fill="url(#visionGlow)"/>
+  <rect x="268" y="108" width="148" height="220" rx="10" fill="#1a1508" stroke="#78350f" stroke-width="1.5"/>
+  <!-- Step badge -->
+  <rect x="280" y="120" width="42" height="18" rx="9" fill="#451a03"/>
+  <text x="301" y="133" text-anchor="middle" fill="#fbbf24" font-size="10" font-weight="600">STEP 2</text>
+
+  <!-- Spotlight icon -->
+  <text x="342" y="162" text-anchor="middle" font-size="24" filter="url(#glow)">💡</text>
+
+  <text x="342" y="185" text-anchor="middle" fill="#fde68a" font-size="13" font-weight="700">问创始人愿景</text>
+  <line x1="280" y1="193" x2="402" y2="193" stroke="#78350f" stroke-width="1"/>
+
+  <!-- The key question -->
+  <rect x="280" y="202" width="124" height="70" rx="6" fill="#0f0a00"/>
+  <text x="342" y="220" text-anchor="middle" fill="#f59e0b" font-size="10.5" font-style="italic">"用户会因为失去</text>
+  <text x="342" y="235" text-anchor="middle" fill="#f59e0b" font-size="10.5" font-style="italic">什么而难受？"</text>
+  <text x="342" y="255" text-anchor="middle" fill="#78350f" font-size="9.5">核心价值主张</text>
+
+  <text x="342" y="292" text-anchor="middle" fill="#92400e" font-size="9.5">代码告诉"做了什么"</text>
+  <text x="342" y="307" text-anchor="middle" fill="#92400e" font-size="9.5">愿景来自创始人</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="418" y1="218" x2="460" y2="218" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ========== STEP 3: 错位分析 ========== -->
+  <rect x="468" y="108" width="168" height="220" rx="10" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="480" y="120" width="42" height="18" rx="9" fill="#1e3a5f"/>
+  <text x="501" y="133" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">STEP 3</text>
+
+  <text x="552" y="155" text-anchor="middle" fill="#f1f5f9" font-size="14" font-weight="600">找错位</text>
+  <line x1="482" y1="165" x2="622" y2="165" stroke="#1e293b" stroke-width="1"/>
+
+  <rect x="484" y="175" width="136" height="24" rx="5" fill="#1c2433"/>
+  <text x="504" y="191" fill="#f87171" font-size="10">✗</text>
+  <text x="516" y="191" fill="#94a3b8" font-size="10.5">体验矛盾</text>
+
+  <rect x="484" y="205" width="136" height="24" rx="5" fill="#1c2433"/>
+  <text x="504" y="221" fill="#f87171" font-size="10">⊘</text>
+  <text x="516" y="221" fill="#94a3b8" font-size="10.5">断裂的环节</text>
+
+  <rect x="484" y="235" width="136" height="24" rx="5" fill="#1c2433"/>
+  <text x="504" y="251" fill="#f87171" font-size="10">⏳</text>
+  <text x="516" y="251" fill="#94a3b8" font-size="10.5">管道瓶颈</text>
+
+  <rect x="484" y="265" width="136" height="24" rx="5" fill="#1c2433"/>
+  <text x="504" y="281" fill="#f87171" font-size="10">◈</text>
+  <text x="516" y="281" fill="#94a3b8" font-size="10.5">未充分利用的资产</text>
+
+  <text x="552" y="315" text-anchor="middle" fill="#475569" font-size="10">愿景 vs 现状 → 差距</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="638" y1="218" x2="674" y2="218" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- ========== STEP 4+5: 护城河 + 输出 ========== -->
+  <!-- Step 4: Moat -->
+  <rect x="682" y="108" width="130" height="96" rx="10" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="694" y="120" width="42" height="18" rx="9" fill="#1e3a5f"/>
+  <text x="715" y="133" text-anchor="middle" fill="#60a5fa" font-size="10" font-weight="600">STEP 4</text>
+  <text x="747" y="154" text-anchor="middle" fill="#f1f5f9" font-size="13" font-weight="600">识别护城河</text>
+  <text x="747" y="174" text-anchor="middle" fill="#64748b" font-size="9.5">数据积累 / 网络效应</text>
+  <text x="747" y="189" text-anchor="middle" fill="#64748b" font-size="9.5">工作流锁定 / 独特能力</text>
+
+  <!-- Arrow 4→5 (vertical) -->
+  <line x1="747" y1="206" x2="747" y2="230" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 5: Output -->
+  <rect x="682" y="238" width="130" height="90" rx="10" fill="url(#insightGrad)" stroke="#1d4ed8" stroke-width="1.5"/>
+  <rect x="694" y="250" width="42" height="18" rx="9" fill="#1e3a8a"/>
+  <text x="715" y="263" text-anchor="middle" fill="#93c5fd" font-size="10" font-weight="600">STEP 5</text>
+  <text x="747" y="284" text-anchor="middle" fill="#bfdbfe" font-size="13" font-weight="600">洞察文档</text>
+  <text x="747" y="302" text-anchor="middle" fill="#60a5fa" font-size="9.5">现状 → 错位 → 方向</text>
+  <text x="747" y="316" text-anchor="middle" fill="#60a5fa" font-size="9.5">P0 / P1 / P2 优先级</text>
+
+  <!-- ========== Core principle at bottom ========== -->
+  <rect x="48" y="346" width="864" height="52" rx="8" fill="#0a0f1a" stroke="#1e293b" stroke-width="1"/>
+  <text x="480" y="367" text-anchor="middle" fill="#475569" font-size="11">核心原则</text>
+  <text x="480" y="386" text-anchor="middle" fill="#64748b" font-size="11.5" font-weight="500">没有理解就没有洞察  ·  代码只说"做了什么"，愿景必须从创始人口中得到  ·  不评判代码质量，只找产品错位</text>
+</svg>
